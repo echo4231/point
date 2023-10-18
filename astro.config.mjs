@@ -22,7 +22,7 @@ const m2dxOptions = {
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://celadon-valkyrie-2534fd.netlify.app/",
+  site: "https://pointconference.netlify.app/",
   integrations: [
     mdx({}),
     sitemap(),
