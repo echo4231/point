@@ -1,8 +1,10 @@
 ---
 tag:
-  - Docs
-title: Getting started 🚀
-description: How to install and Nebulix.
+  - Features
+title: "Shining a light on invisible harassment: The perspective of
+  fact-checkers and women journalists"
+description: "Shining a light on invisible harassment: The perspective of
+  fact-checkers and women journalists"
 intro: Clone, Configure, Deploy
 style:
   template: split
@@ -11,131 +13,58 @@ style:
   container: md
   hero_image_opacity: ""
 pubDate: 2023-09-03T12:18:03.122+02:00
-thumbnail: /src/assets/nebulala_rocket.jpeg
+thumbnail: /src/assets/point-11-day-2-75-1-.jpg
+og_image: /src/assets/point-11-day-2-75-1-.jpg
 ---
+## The final panel of the POINT 1011 Conference focused on online and visible harassment female journalists and fact-checkers face daily, the influence of public figures on harassment and enabling narratives.
 
-## Clone this repo or deploy to netlify
+The panel focused on the discussion between four female media workers: Jennifer Adams (Pen to Paper), Nabeelah Shabbir (International Center for Journalists),  Milanka Kovačević (Direkt Portal) and  Ana Brakus (Faktograf), while being moderated by Tijana Cvjetićanin (UG “Zašto ne” – CA “Why not” ).
 
-Easily deploy this theme to Netlify with a single click.
+Tijana Cvjetićanin (“Zašto ne”) opened the panel with a moment of silence for journalists who have lost their lives while reporting from war and conflict zones.
 
-| [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/unfolding-io/nebulix#BLOG_SLUG=blog&PORTFOLIO_SLUG=work&SHOP_SLUG=shop&MENU_SLUG=menu&WEBSITE_LANGUAGE=en&CURRENCY=USD&UNITS=metric&NODE_VERSION=18) | [![GitHub Repo stars](https://img.shields.io/github/stars/unfolding-io/nebulix?logo=github)](https://github.com/unfolding-io/nebulix) |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+Shabbir was given the opportunity to discuss her great global-scale research on the harassment of women journalists. 
 
-## 1. Setting up the .env file
+“We’ve been focusing on gender-based violence, we know that it aids in a bit impunity when it comes to crime against journalists, outside of conflict zones, I do think this is one of the most serious threats that journalists are facing”, Shabbir said while presenting results produced through the extensive research. She spoke about digital harassment and its increase toward (women) journalists, who are now facing the loss of trust while one-third of women journalists across the globe stated that “they had experienced online harassment in the course of their work and could see the connection between the online harassment that they face and offline attacks which is absolutely nuts”. These results, as previously mentioned, were presented in “The Chilling”, a report commissioned by UNESCO. 
 
-rename the `env.txt` to `.env` and fill in your details
+Nabeelah presented the work of ICFJ (International Center for Journalists) by discussing their “big data case studies on emblematic women journalists around the world who are experiencing online violence”. She spoke about different women that the ICFJ focused on and the cooperation between them and computer scientists from the University of Sheffield, who are codifying online abuse into categories, which are useful for further interviews. “We are also looking at developing a kind of early warning system dashboard”, Shabbir said.
 
-```ENV
-BLOG_SLUG=blog
-PORTFOLIO_SLUG=work
-SHOP_SLUG=shop
-MENU_SLUG=menu
-WEBSITE_LANGUAGE=en
-CURRENCY=USD
-UNITS=metric
-SNIPCART_KEY=<your-snipcart-public-key>
-NEWSLETTER_PROVIDER=mailchimp
-MAILCHIMP_API_KEY=XXXXXXXXXXXXXXXX-us21
-MAILCHIMP_SERVER_PREFIX=us21
-MAILCHIMP_LIST_ID=XXXXXXXXX
-NODE_VERSION=18
-```
+> “Do you see a lot of things being similar? Is it like a model that is repeating everywhere”,  Cvjetićanin asked. “Yeah, models that are repeating everywhere, in fact, we’re publishing a document with OSCE sometime later this month”, Shabbir said while concluding her introduction. 
 
-### 2. Configure your Static CMS Backend
+Cvjetićanin then spoke to Jennifer Addams, asking her: “How harassment the women journalist face is different from the one that men face?  How does harassment of women journalists compare to general harassment that women face online?” Addams spoke about self-censorship and the loss of gender diversity in journalism as women are not supported correctly by employers or government bodies. “Women present different narratives, women present diversity narratives, they present marginalized narratives, they show us stories that are not mainstream. So, every time we lose the voice of another woman we lose that diversity component”, Addams said while discussing that online harassment of women media workers has more of an impact than gendered online violence in general. Addams and her partner concluded a way to present data about gendered violence as violence against journalists but as “gendered disinformation” which is “a way of silencing dissenting voices, it is a way of hoarding power”. 
 
-Navigate to `src/pages/admin.astro` and provide your Git repository details. You can find a list of all supported Git backends at:
-[https://www.staticcms.org/docs/backends-overview](https://www.staticcms.org/docs/backends-overview)
+Cvjetićanin used this conclusion to move on to Milanka Kovačević from the Direkt Portal, which is almost entirely a female-run newsroom. Kovačević stated that it is very hard for women journalists in Balkan as the language itself is gendered, having a difference in the name for the vocation – “novinar” (male) and “novinarka” (female). “I can’t say what is more dangerous”, Kovačević said while talking about visible and invisible harassment female journalists face in the Balkans. “First they put the labels on you as you are a spy or you are not a good mother or a good wife or a good friend … ” she stated while speaking about the Balkan society and the current public opinion on female journalists and the difficult future they face. 
 
-**_Gitlab Example:_**
+Ana Brakus from Faktograf was then introduced and was asked to present the intersection between harassment of fact-checkers and female journalists and the results which were gathered by interviewing colleagues across Europe. The research aimed to present the shared experience of 40 organizations from 28 countries in Europe, whilst giving results that “nine out of 10 respondents have experienced harassment from political or other relevant actors. We have learned that more than 50% of those have experienced repeated harassment and that more than 30% of them experience harassment every week or every month”.
 
-```javascript
+During the discussion of the research and harassment pointed at organizations by political figures, Brakus stated: “Sadly (we have) learned and confirmed that it is just a tool in the toolbox that they use in order to basically erode trust in the work that we do in the organizations”. She further spoke that this is a way to create financial benefit while discrediting factual reports or news. Additionally, she spoke about the different harassment male and female fact-checkers face, deducting that men face harassment on an intellectual, while women face it on a gender level. The invisibility of the fact-checking community also comes from a lack of tradition, Braus thinks. 
 
-const config = {
-	locale: lang,
-	site_url: url,
-	logo_url: 'https://nebulix.unfolding.io/nebulix-logo.svg',
-	local_backend: true,
-	backend: {
-		name: 'gitlab',
-		repo: '/<your-gitlab-repo>',
-		auth_type: 'pkce', // Required for pkce
-		app_id: 'xxxx', // Application ID from your GitLab settings
-		commit_messages: {
-			create: 'Create {{collection}} "{{slug}}"',
-			update: 'Update {{collection}} "{{slug}}"',
-			delete: 'Delete {{collection}} "{{slug}}"',
-			uploadMedia: 'Upload "{{path}}"',
-			deleteMedia: 'Delete "{{path}}"'
-		}
-	},
-	search: 'true',
-    ....
-}
+> “There is also an interesting disproportion that we found. When you ask people who is harassing you … were they women or men – they were almost exclusively men and their targets were disproportionately frequently women”, Cvjetićanin added, as she also led the aforementioned research. Shabbir then spoke about the connection between online harassment and coordinated disinformation attacks connected to public and political figures. “If you have an intersectional identity, so if you’re a woman and also have an ethnic identity or LGBTQ+ identity or whatever it can be your extra risk of being attacked online”, she said during her discussion about perpetrators and the lack of influence on public figures in certain countries, as most do not have an effective mechanism to combat online harassment. The IFJC also focuses on giving recommendations to newsrooms in order not to enable an environment to openly harass people. The discussion then focused on the enabling environments created by public actors, as Cvjetićanin talked about “permission to harass”. 
 
-```
+Cvjetićanin then proceeded to discuss false narratives with Kovačević, with a focus on titling journalists as spies or foreign operatives. “As time goes by it became more dangerous to have that label on you”, Kovačević mentioned while speaking about public threats from different people in small towns and areas, which are under great influence of power, politics and crime.
 
-### 3. Add your site to the astro config
+The panellists then spoke about the connection between personal well-being, professional obligations, passion and motivation. Addams spoke about the long-term effects of discrimination, not just female journalists, but all women face. Furthermore, she spoke about the difference in online harassment women face in different regions of the world, hence the recommendations must be different for different narratives. “We need to really kind of go through what we’ve been taught, evaluate what is our methodology and reflect on where we come from and are we making progress”. Addams concluded as she discussed the “vulnerability” narrative that is placed in the public space about women. 
 
-```javascript
+An audience member asked: “If there have been any cases of accountability of these attackers whether it comes down to holding individuals accountable or institutions and state actors accountable in this respect and maybe how we start conversations to not only respect women but journalists in a time of disinformation and misinformation?” Shabbir then presented the court case between Saudi officials and a Brazilian journalist in the US, as she was spied on and harassed due to her work. The process had a major mental health impact on the journalist, which is a common manifestation of long-term harassment. She then spoke about the lack of trust in female journalists through the example of a Ukrainian journalist, who is facing a difficult time due to her research of the army. 
 
-export default defineConfig({
-	site: 'https://your-website.com',
-    ....
+Cvjetićanin then put focus on the frequent targeting of families and children as a way to harass women. “So, often it’s children, but in the Middle Eastern context, we found it’s also against your parents. For example, they’ll go after your parents, it’s an honour-based system”, Shabbir stated while discussing the frequency of these cases and people leaving the media space due to threats. Cvjetićanin then put focus on the invisibility of harassment fact-checkers face due to their work on platforms that usually flag information.
 
-```
+> “There’s this general feeling among the people we surveyed that they’re not protected on platforms at all and at the same time they’re being called someone that is censoring free speech on these platforms”, she said. Braus then continued to root the harassment fact-checkers face in lack of information but also in the lack of interest. “They’re interested in how they can manipulate the feelings or the situation that we as a society find ourselves in”, Braus stated, while also mentioning that lack of understanding is one of the biggest reasons for harassment. She also spoke about labelling and the lack of sufficient financial and government support to fact-checkers and content moderators.
 
-### 4. Install dependencies
 
-```bash
-npm install
-```
+Addams added that a lot of factors negatively affect the progress of the community, such as “competition for resources, the lack of sharing of information, the duplication of efforts and not communicating with one another”. She put additional focus on cooperation between women journalists which could serve as a great empowering tool and could be a way to push forward. Braus then deducted that harassment and discrimination will “stick around” for a longer period but that activists and other members of society must “keep pushing and to the best you can” to make the current situation better. 
 
-### 🛠️ 5. Start Development server
+“I don’t think there’s an end goal”, Cvjetićanin said in correlation, while also speaking about the duty of care toward targeted groups, after which the conference was closed.
 
-```bash
-npm run dev
-```
+|Command|Action|
+|---|---|
+|`npm install`|Installs dependencies|
+|`npm run dev`|Starts local dev server at `localhost:4321`|
+|`npm run cms-proxy-server`|Starts Staticcms proxy server for local-backend|
+|`npm run build`|Build your production site to `./dist/`|
+|`npm run preview`|Preview your build locally, before deploying|
+|`npm run astro ...`|Run CLI commands like `astro add`, `astro check`|
+|`npm run astro -- --help`|Get help using the Astro CL|
 
-If you wish to engage the local backend:
 
-```bash
-npm run cms-proxy-server
-```
 
-Now you can open Static CMS on http://localhost:4321/admin/
 
-## ❌ Removing Collections
-
-If your cosmic journey excludes a blog, portfolio, shop, or restaurant menu, simply remove the corresponding documents from the `**src/content**`. Additionally, erase the page templates from `**src/pages**` .
-
-## 🛸 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                    | Action                                           |
-| -------------------------- | ------------------------------------------------ |
-| `npm install`              | Installs dependencies                            |
-| `npm run dev`              | Starts local dev server at `localhost:4321`      |
-| `npm run cms-proxy-server` | Starts Staticcms proxy server for local-backend  |
-| `npm run build`            | Build your production site to `./dist/`          |
-| `npm run preview`          | Preview your build locally, before deploying     |
-| `npm run astro ...`        | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help`  | Get help using the Astro CL                      |
-
-## 👀 Want to learn more about Astro?
-
-Check out [Astro documentation](https://docs.astro.build) or jump into Astro's [Discord server](https://astro.build/chat).
-
-## 📚 Tech Stack
-
-Astro, MDX, Vue, TailwindCSS, Pagefind, Snipcart
-
-## 🛟 Support
-
-If you encounter any issues or bugs, we encourage you to open an issue in the repository. To help us quickly address the problem, please provide detailed information about the bug and steps to reproduce it.
-
-For those seeking priority assistance, we offer premium support services. Feel free to reach out to us by email at [hello@unfolding.io.](mailto:hello@unfolding.io.) We're here to help!
-
-## 🚕 Roadmap
-
-As we journey towards v1.0, our path includes enriching the page builder with a diverse array of new blocks, upgrading dependencies to ensure optimal performance, and introducing exciting features. We're eager to hear from you! If you have any feature requests, please feel free to reach out and let us know.
